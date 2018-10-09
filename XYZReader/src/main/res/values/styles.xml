@@ -17,14 +17,6 @@
 
 <resources>
 
-    <style name="Theme.Bacon" parent="@style/Theme.AppCompat.Light.NoActionBar">
-
-    </style>
-
-    <style name="Theme.Bacon.Detail">
-        <item name="android:statusBarColor">@android:color/transparent</item>
-    </style>
-
     <style name="readable">
         <item name="android:fontFamily">@font/roboto_regular</item>
         <item name="android:textSize">18sp</item>

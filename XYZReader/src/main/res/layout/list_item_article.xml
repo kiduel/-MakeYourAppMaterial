@@ -17,21 +17,13 @@
         <!--suppress AndroidLintContentDescription -->
         <com.example.xyzreader.ui.DynamicHeightNetworkImageView
             android:id="@+id/thumbnail"
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
+            android:layout_width="155dp"
+            android:layout_height="141dp"
             android:layout_gravity="center_vertical"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            android:scaleType="centerCrop"
             android:background="@color/photo_placeholder"
+            android:scaleType="centerCrop"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/guideline"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintEnd_toStartOf="@+id/article_title" />
 
         <TextView
             android:id="@+id/article_title"
@@ -72,11 +64,13 @@
             app:layout_constraintGuide_begin="125dp" />
 
         <View
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="1dp"
-            android:padding="1dp"
             android:background="@color/ltgray"
-            app:layout_constraintBottom_toBottomOf="parent">
+            android:padding="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/article_subtitle">
 
         </View>
     </android.support.constraint.ConstraintLayout>
